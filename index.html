@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Optional: smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Pranjal Kushwaha</a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Education">Education</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, I'm <span>Pranjal Kushwaha</span></h1>
@@ -31,7 +40,6 @@
             <div class="btn-box">
                 <a href="#" class="btn">Hire Me</a>
                 <a href="#" class="btn">Let's Talk</a>
-
             </div>
         </div> 
         
@@ -41,65 +49,79 @@
             <a href="https://www.linkedin.com/feed/"><i class="bx bxl-linkedin"></i></a>
         </div>
     </section>
+
+    <!-- About Section -->
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
         <div class="about-img">
-            <img src="pranjal.jpg" alt="">
+            <img src="pranjal.jpg" alt="Pranjal Kushwaha">
             <span class="circle-spin"></span>
         </div>
-      <div class="about-content">
-        <h3>Frontend Developer!</h3>
-        <p>I’m Pranjal Kushwaha, a dedicated Frontend Developer skilled in HTML, CSS, JavaScript, React.js, and Bootstrap. I build clean, responsive, and user-friendly web interfaces with a focus on performance and usability. With additional knowledge of Python, SQL, MongoDB, and MS Office, I bring a well-rounded approach to both frontend development and basic backend integration. I’m passionate about turning ideas into functional and visually appealing digital products. My goal is to create seamless user experiences by combining modern technologies with creative problem-solving.</p>
-<div class="btn-box btns">
-    <a href="" class="btn">Read more</a>
-</div>
-      </div>
+        <div class="about-content">
+            <h3>Frontend Developer!</h3>
+            <p>I’m Pranjal Kushwaha, a dedicated Frontend Developer skilled in HTML, CSS, JavaScript, React.js, and Bootstrap. I build clean, responsive, and user-friendly web interfaces with a focus on performance and usability. With additional knowledge of Python, SQL, MongoDB, and MS Office, I bring a well-rounded approach to both frontend development and basic backend integration. I’m passionate about turning ideas into functional and visually appealing digital products. My goal is to create seamless user experiences by combining modern technologies with creative problem-solving.</p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
     </section>  
-<section class="education" id="education">
-    <h2 class="heading">My <span>Journey</span></h2>
-    <div class="education-row">
-        <div class="education-column">
-            <h1>Education</h1>
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="bx bxs-calendar"></i>2021-2025</div>
-                        <h3>BACHELOR DEGREE - NOIDA INSTITUTE OF ENGINEERING AND TECHNOLOGY</h3>
-                        <p>KNOWLEDGE PARK 2 , GREATERNOIDA, UTTARPRADESH</p>
-                        <div class="year"><i class="bx bxs-calendar"></i>2020-2021</div>
-                        <h3>INTERMEDIATE SENIOR SECONDARY SCHOOL - IMPERIAL PUBLIC SCHOOL</h3>
-                        <p>ASSI, VARANASI,UTTARPRADESH</p>
-                        <div class="year"><i class="bx bxs-calendar"></i>2018-2019</div>
-                        <h3>HIGH SCHOOL - IMPERIAL PUBLIC SCHOOL</h3>
-                        <p>ASSI, VARANASI,UTTARPRADESH</p>
 
+    <!-- Education & Experience Section -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+        <div class="education-row">
+
+            <!-- Education Column -->
+            <div class="education-column">
+                <h1>Education</h1>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2021–2025</div>
+                            <h3>Bachelor Degree - Noida Institute of Engineering and Technology</h3>
+                            <p>Knowledge Park 2, Greater Noida, Uttar Pradesh</p>
+
+                            <div class="year"><i class="bx bxs-calendar"></i> 2020–2021</div>
+                            <h3>Intermediate - Imperial Public School</h3>
+                            <p>Assi, Varanasi, Uttar Pradesh</p>
+
+                            <div class="year"><i class="bx bxs-calendar"></i> 2018–2019</div>
+                            <h3>High School - Imperial Public School</h3>
+                            <p>Assi, Varanasi, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Column -->
+            <div class="education-column" id="experience">
+                <h1>Experience</h1>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2025</div>
+                            <h3>Deloitte</h3>
+                            <p><a href="https://lnkd.in/g6Ud9zBH" target="_blank" style="color: #00abf0;">View Internship</a></p>
+
+                            <div class="year"><i class="bx bxs-calendar"></i> 2024</div>
+                            <h3>Incapp Training Institute</h3>
+                            <p>Java-based project</p>
+                            <p>Alpha 1, Greater Noida, Uttar Pradesh</p>
+
+                            <div class="year"><i class="bx bxs-calendar"></i> 2023</div>
+                            <h3>Internshala</h3>
+                            <p>Web Developer</p>
+                            <p>Online Platform</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-         <div class="education-column">
-            <h1>Experience</h1>
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="bx bxs-calendar"></i>2025</div>
-                        <h3>DELOITTE  </h3>
-                        <p>https://lnkd.in/g6Ud9zBH</p>
-                        
-                        <div class="year"><i class="bx bxs-calendar"></i>2024</div>
-                        <h3>INCAPP TRANING INSTITUTE</h3>
-                        <p>Java based project</p>
-                        <p>Alpha 1 ,GreaterNoida, uttarPradesh</p>
-                        <div class="year"><i class="bx bxs-calendar"></i>2023</div>
-                        <h3>INTERNSHALA </h3>
-                        <p> web Developer</p>
-                        <p>Online Platform</p>
+    </section>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Optional Contact Section Placeholder -->
+    <section id="contact">
+        <!-- Add contact content here -->
+    </section>
 </body>
 </html>
