@@ -377,4 +377,93 @@ span{
     color: #c0c0c0;
     line-height: 1.6;
 }
+/* 🔹 Skills Section Base */
+.skills {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* 🔹 Skills Row */
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+/* 🔹 Skills Column */
+.skills-row .skills-column {
+    flex: 1 1 35rem;
+    min-width: 300px;
+}
+
+.skills-column .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00abf0;
+    text-transform: uppercase;
+    border-left: 4px solid #00abf0;
+    padding-left: 1rem;
+}
+
+/* 🔹 Skills Box Content */
+.skills-box .skills-content {
+    position: relative;
+    border: 2px solid #00abf0;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    background: #0a1f2d;
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills-box .skills-content:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔹 Progress Blocks */
+.skills-content .progress {
+    padding: 1rem 0;
+}
+
+.skills-content .progress h3 {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    color: #ededed;
+}
+
+.skills-content .progress h3 span {
+    color: #00abf0;
+    font-weight: 500;
+}
+
+/* 🔹 Progress Bar */
+.skills-content .progress .bar {
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    background: #16394a;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.skills-content .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: #00abf0;
+    width: 0;
+    animation: fillBar 1s ease forwards;
+}
+
+/* 🔹 Skill Fill Animation */
+@keyframes fillBar {
+    to {
+        width: var(--skill-width);
+    }
+}
+
+
+
 
